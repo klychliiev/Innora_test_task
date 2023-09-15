@@ -13,7 +13,7 @@
 
 Write the following commands (after the $ sign) in the terminal to run the program:<br>
 ```bash
-$ mkdir rotated_images 
+
 $ python3 -m venv env
 $ source env/bin/activate
 $ pip3 install -r requirements.txt
@@ -31,7 +31,7 @@ invoices_rotated/9.png: -1
 invoices_rotated/10.png: -4
 $ python3 image_rotation.py
 ```
-The last command writes rotated input images into the newly created 'rotated_images' folder.
+The last command writes rotated input images into the 'rotated_images' folder.
 
 ## Script explanation
 The opencv-python library was used to calculate the rotation angle of images. The calculate_angle() function was defined to handle this problem. It takes a path to an image as an argument and processes it in the following way:
