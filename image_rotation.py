@@ -7,7 +7,7 @@ INPUT_IMAGES_PATH = 'invoices_rotated'
 ROTATED_IMAGES_PATH = 'rotated_images'
 
 
-def rotate_random_image(input_images, rotated_images):
+def rotate_image(input_images, rotated_images):
 
     for image in os.listdir(input_images):
 
