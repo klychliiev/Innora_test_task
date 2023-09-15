@@ -5,6 +5,8 @@ from PIL import Image
 import json
 import os
 from natsort import natsorted
+from scipy import ndimage
+
 
 
 PATH = 'invoices_rotated'
@@ -27,6 +29,9 @@ def calculate_angle(image_path):
         angles.append(angle)
 
     median_angle = np.median(angles)
+
+    # img_rotated = ndimage.rotate(img_before, median_angle)
+    # cv2.imwrite('lines_detected.jpg', img_rotated)  
 
     return round(median_angle, 2)
 
