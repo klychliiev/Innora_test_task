@@ -12,6 +12,7 @@
 ## Run the program 
 
 Write the following commands (after the $ sign) in the terminal to run the program:<br>
+```bash
 $ mkdir rotated_images <br>
 $ python3 -m venv env <br>
 $ source env/bin/activate<br>
@@ -29,7 +30,7 @@ invoices_rotated/8.png: -4<br>
 invoices_rotated/9.png: -1<br>
 invoices_rotated/10.png: -4<br>
 $ python3 image_rotation.py<br>
-
+```
 The last command writes rotated input images into the newly created 'rotated_images' folder.
 
 ## Script explanation
