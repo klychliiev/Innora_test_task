@@ -3,23 +3,25 @@ from PIL import Image
 import os
 import random
 
-PATH = 'invoices_rotated'
+INPUT_IMAGES_PATH = 'invoices_rotated'
+ROTATED_IMAGES_PATH = 'rotated_images'
 
 
-def rotate_random_image(path):
+def rotate_random_image(input_images, rotated_images):
 
-    random_file = random.choice(os.listdir(path))
+    for image in os.listdir(input_images):
 
-    image_path = os.path.join(path, random_file)
+        image_path = os.path.join(input_images, image)
 
-    detected_angle = calculate_angle(image_path)
+        detected_angle = calculate_angle(image_path)
 
-    pil_image = Image.open(image_path)
+        pil_image = Image.open(image_path)
 
-    rotated_image = pil_image.rotate(detected_angle)
+        rotated_image = pil_image.rotate(detected_angle)
 
-    rotated_image.show()
+        rotated_image.save(f'{rotated_images}/{image}')
 
 
 if __name__ == '__main__':
-    rotate_random_image(PATH)
+    rotate_random_image(INPUT_IMAGES_PATH,
+                        ROTATED_IMAGES_PATH)
