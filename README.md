@@ -12,21 +12,21 @@
 Write the following commands in the terminal to run the program:<br>
 $ python3 -m venv env <br>
 $ source env/bin/activate<br>
-$ pip3 install -r requirements.txt
-$ python3 angle_detection.py
+$ pip3 install -r requirements.txt<br>
+$ python3 angle_detection.py<br>
 
-The output of the last command should be as follows:
-invoices_rotated/0.png: 7
-invoices_rotated/1.png: -2
-invoices_rotated/2.png: -9
-invoices_rotated/3.png: -7
-invoices_rotated/4.png: -1
-invoices_rotated/5.png: -6
-invoices_rotated/6.png: 5
-invoices_rotated/7.png: -2
-invoices_rotated/8.png: -4
-invoices_rotated/9.png: -1
-invoices_rotated/10.png: -4
+The output of the last command should be as follows:<br>
+invoices_rotated/0.png: 7<br>
+invoices_rotated/1.png: -2<br>
+invoices_rotated/2.png: -9<br>
+invoices_rotated/3.png: -7<br>
+invoices_rotated/4.png: -1<br>
+invoices_rotated/5.png: -6<br>
+invoices_rotated/6.png: 5<br>
+invoices_rotated/7.png: -2<br>
+invoices_rotated/8.png: -4<br>
+invoices_rotated/9.png: -1<br>
+invoices_rotated/10.png: -4<br>
 
 ## Script explanation
 
