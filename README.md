@@ -29,5 +29,10 @@ invoices_rotated/9.png: -1<br>
 invoices_rotated/10.png: -4<br>
 
 ## Script explanation
+<b>def calculate_angle()</b><br>
+The opencv-python library was used to calculate the rotation angle of images. 
+The Canny function is applied to the grayscale image to detect the edges. After that, the HoughLinesP function detects the lines. Once the lines are detected, the for loop is defined to loop over the lines and calculate the angle of each line with respect to the horizontal axis. These angles are stored in the 'angles' list. This function returns the median angle of all the lines in the image thus representing the overall orientation of the image.
 
+<b>def generate_json()</b><br>
+This function calculates the angle in the range of [-30,30] degrees for each rotated image in the 'invoices_rotated' folder. Lastly, the 'predicted_angles.json' file is generated. This JSON file contains a test image path as a key and a predicted angle as a value.
 
