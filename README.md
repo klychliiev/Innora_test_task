@@ -40,6 +40,5 @@ The opencv-python library was used to calculate the rotation angle of images. Th
 3. The HoughLinesP function detects the lines;
 4. The for loop is defined to loop over the detected lines and calculate the angle of each line with respect to the horizontal axis. These angles are stored in the 'angles' list;
 5. This function returns the median angle of all the lines in the image thus representing the overall orientation of the image.<br>
-![rotated_image](https://drive.google.com/file/d/1EOA1Pvp1EQxXIMNPkXagoqg9E-DTF9-J/view?usp=sharing)
 
 The rotate_image() function calculates the rotation angle within the [-30,30] degrees range using the predefined calculate_angle() function and rotates each input image by the calculated angle. The rotated images are saved to the 'rotated_images' folder.
