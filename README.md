@@ -9,9 +9,9 @@
 
 ## Run the program 
 
-Write the following commands in the terminal to run the program:< /br>
-$ python3 -m venv env < /br>
-$ source env/bin/activate< /br>
+Write the following commands in the terminal to run the program:<br>
+$ python3 -m venv env <br>
+$ source env/bin/activate<br>
 $ pip3 install -r requirements.txt
 $ python3 angle_detection.py
 
