@@ -13,23 +13,23 @@
 
 Write the following commands (after the $ sign) in the terminal to run the program:<br>
 ```bash
-$ mkdir rotated_images <br>
-$ python3 -m venv env <br>
-$ source env/bin/activate<br>
-$ pip3 install -r requirements.txt<br>
-$ python3 angle_detection.py<br>
-invoices_rotated/0.png: 7<br>
-invoices_rotated/1.png: -2<br>
-invoices_rotated/2.png: -9<br>
-invoices_rotated/3.png: -7<br>
-invoices_rotated/4.png: -1<br>
-invoices_rotated/5.png: -6<br>
-invoices_rotated/6.png: 5<br>
-invoices_rotated/7.png: -2<br>
-invoices_rotated/8.png: -4<br>
-invoices_rotated/9.png: -1<br>
-invoices_rotated/10.png: -4<br>
-$ python3 image_rotation.py<br>
+$ mkdir rotated_images 
+$ python3 -m venv env
+$ source env/bin/activate
+$ pip3 install -r requirements.txt
+$ python3 angle_detection.py
+invoices_rotated/0.png: 7
+invoices_rotated/1.png: -2
+invoices_rotated/2.png: -9
+invoices_rotated/3.png: -7
+invoices_rotated/4.png: -1
+invoices_rotated/5.png: -6
+invoices_rotated/6.png: 5
+invoices_rotated/7.png: -2
+invoices_rotated/8.png: -4
+invoices_rotated/9.png: -1
+invoices_rotated/10.png: -4
+$ python3 image_rotation.py
 ```
 The last command writes rotated input images into the newly created 'rotated_images' folder.
 
